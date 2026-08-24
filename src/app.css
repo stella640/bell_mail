@@ -1,0 +1,114 @@
+/* ===== BASIC RESET ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent mobile browsers from auto-adjusting text */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* ===== BODY ===== */
+
+body {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: white;
+  color: #1b1b1b;
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+/* Prevent forced dark-mode color inversion */
+:root {
+  color-scheme: light;
+}
+
+/* ===== HEADINGS ===== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+/* ===== TEXT ===== */
+
+p {
+  color: #1b1b1b;
+}
+
+/* ===== LINKS ===== */
+
+a {
+  color: #0067b8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== INPUT RESET ===== */
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-radius: 0;
+}
+
+/* Remove mobile input styling */
+input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Prevent Safari shadows */
+input:focus {
+  outline: none;
+}
+
+/* ===== BUTTON RESET ===== */
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== LIST RESET ===== */
+
+ul, ol {
+  list-style: none;
+}
+
+/* ===== PREVENT MOBILE OVERFLOW ===== */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure the Svelte injection wrapper expands to fill its parent */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: block; /* Changed from height: 100% to allow content to push height */
+  margin: 0;
+  padding: 0;
+}
