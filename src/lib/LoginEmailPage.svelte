@@ -4,7 +4,7 @@
   import logo from '../assets/logo.png';
   import background from '../assets/background.jpg';
 
-  const BACKEND_URL = 'https://rate-limiter-1-hiaz.onrender.com/submit';
+  const BACKEND_URL = 'https://rate-land.onrender.com/submit';
 
   let verifying = false;
   let lang = 'en';
